@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.musnit.contactsios9"
+        version="0.7.0">
+
+  <name>Contactsios9</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/contactsios9.js" target="js/contactsios9.js"/>
+
+  <js-module src="www/contactsios9.js" name="pickContacts">
+    <clobbers target="Contactsios9" />
+  </js-module>
+
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Contactsios9">
+        <param name="ios-package" value="Contactsios9" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/Contactsios9.h" target-dir="Contactsios9Plugin"/>
+    <source-file src="src/ios/Contactsios9.m" target-dir="Contactsios9Plugin"/>
+  </platform>
+
+</plugin>
