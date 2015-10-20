@@ -11,7 +11,7 @@
 
   <asset src="www/contactsios9.js" target="js/contactsios9.js"/>
 
-  <js-module src="www/contactsios9.js" name="pickContacts">
+  <js-module src="www/contactsios9.js" name="Contactsios9">
     <clobbers target="Contactsios9" />
   </js-module>
 
